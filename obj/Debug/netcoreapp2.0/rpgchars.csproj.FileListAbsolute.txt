@@ -1,0 +1,11 @@
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\bin\Debug\netcoreapp2.0\rpgchars.deps.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\bin\Debug\netcoreapp2.0\rpgchars.runtimeconfig.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\bin\Debug\netcoreapp2.0\rpgchars.runtimeconfig.dev.json
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\bin\Debug\netcoreapp2.0\rpgchars.dll
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\bin\Debug\netcoreapp2.0\rpgchars.pdb
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.csprojResolveAssemblyReference.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.csproj.CoreCompileInputs.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.AssemblyInfoInputs.cache
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.AssemblyInfo.cs
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.dll
+C:\Users\Garre\Desktop\CODING DOJO WORK\C#\Work\RPGChars\obj\Debug\netcoreapp2.0\rpgchars.pdb
