@@ -63,7 +63,26 @@ namespace rpgchars
                 enemy.health -= damage;
             }
         }
-        public Wizard(string name, int str = 1, int dex = 3) : base(name, str, 25, dex, 75)
+         public void Heal()
+        {
+            health += 10 * intelligence;
+        }
+        public void FireBall(Human enemy)
+        {
+            Random rand = new Random();
+            if (enemy == null)
+            {
+                Console.WriteLine("Fire Ball Failed");
+            }
+            else 
+            {
+                int damage = rand.Next(20, 50);
+                Console.WriteLine($"...Casting Fire Ball on {enemy.name}...");
+                Console.WriteLine($"Dealt {damage} damage!");
+                enemy.health -= damage;
+            }
+        }
+        public Wizard(string name, int str = 1, int dex = 3) : base(name, str, 25, dex, 50)
         {
         }   
     }
@@ -84,7 +103,17 @@ namespace rpgchars
                 enemy.health -= damage;
             }
         }
-        public Ninja(string name, int str = 3, int intl = 3, int hlth = 100) : base(name, str, intl, 6, hlth)
+        public void Steal(Human enemy)
+        {
+            attack(enemy);
+            health += 10;
+
+        }
+        public void Retreat()
+        {
+            health -= 15;
+        }
+        public Ninja(string name, int str = 3, int intl = 3, int hlth = 100) : base(name, str, intl, 175, hlth)
         {
         }
     }
@@ -105,7 +134,36 @@ namespace rpgchars
                 enemy.health -= damage;
             }
         }
-        public Samurai(string name, int intl = 3, int dex = 3) : base(name, 6, intl, dex, 150)
+        public void DeathBlow(Human enemy)
+        {
+            if (enemy == null)
+            {
+                Console.WriteLine("Death Blow failed!");
+            }
+            else if (enemy != null && enemy.health >= 50)
+            {
+                attack(enemy);
+            }
+            else if (enemy != null && enemy.health < 50)
+            {
+                enemy.health = 0;
+                Console.WriteLine($"You have slayed {enemy.name}");
+            }
+        }
+        public void Meditate()
+        {
+            if (health < 200)
+            {
+                Console.WriteLine("...Meditating...");
+                health = 200;
+                Console.WriteLine("Health restored!");
+            }
+            else 
+            {
+                Console.WriteLine("Meditation failed!");
+            }
+        }
+        public Samurai(string name, int intl = 3, int dex = 3) : base(name, 6, intl, dex, 200)
         {
         }
     }
